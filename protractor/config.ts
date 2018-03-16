@@ -4,7 +4,7 @@ import { reporter } from "./helpers/reporter";
 
 export const config: Config = {
     framework: 'jasmine',
-    seleniumAddress: 'http://localhost:4444/wd/hub',
+    SELENIUM_PROMISE_MANAGER: false,
     noGlobals: true,
     specs: ['../test/Google.spec.js'],
     onPrepare: () => {

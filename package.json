@@ -1,0 +1,28 @@
+{
+  "name": "protractor-workshop-2017",
+  "version": "1.0.0",
+  "description": "This is a Workshop about Protractor",
+  "main": "index.js",
+  "scripts": {
+    "test": "protractor protractor.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SebastianSuarezActiveOne/protractor-workshop-2017.git"
+  },
+  "keywords": [
+    "ui-testing",
+    "dojo",
+    "practice",
+    "protractor"
+  ],
+  "author": "Sebastian Suarez - Sebastian.Suarez@ActiveOne.co (SebastianSuarezActiveOne)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SebastianSuarezActiveOne/protractor-workshop-2017/issues"
+  },
+  "homepage": "https://github.com/SebastianSuarezActiveOne/protractor-workshop-2017#readme",
+  "dependencies": {
+    "protractor": "^5.3.0"
+  }
+}

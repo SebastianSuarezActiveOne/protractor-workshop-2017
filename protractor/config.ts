@@ -6,7 +6,8 @@ export const config: Config = {
   framework: 'jasmine',
   SELENIUM_PROMISE_MANAGER: false,
   noGlobals: true,
-  specs: ['../test/Google.spec.js'],
+  getPageTimeout: 1000,
+  specs: ['../test/*.spec.js'],
   onPrepare: () => {
     browser.ignoreSynchronization = true;
     reporter();

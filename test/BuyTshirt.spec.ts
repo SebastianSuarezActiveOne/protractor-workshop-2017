@@ -32,6 +32,8 @@ describe('Buy a t-shirt', () => {
     await (browser.sleep(3000));
     await summaryPage.goToCheckout();
     await (browser.sleep(3000));
+    await signInStep.fillEmail();
+    await signInStep.fillPassword();
     await signInStep.signIn();
     await (browser.sleep(3000));
     await addressPage.goToCheckout();

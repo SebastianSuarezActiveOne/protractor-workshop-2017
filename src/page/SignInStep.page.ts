@@ -14,9 +14,15 @@ export class SignInStep {
     return $('#SubmitLogin > span');
   }
 
+  public fillEmail(): promise.Promise<void> {
+    return this.emailInput.sendKeys('aperdomobo@gmail.com');
+  }
+
+  public fillPassword(): promise.Promise<void> {
+    return this.passwordInput.sendKeys('WorkshopProtractor');
+  }
+
   public signIn(): promise.Promise<void> {
-    this.emailInput.sendKeys('aperdomobo@gmail.com');
-    this.passwordInput.sendKeys('WorkshopProtractor');
     return this.signInButton.click();
   }
 }

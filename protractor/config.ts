@@ -13,6 +13,7 @@ export const config: Config = {
   specs: ['../test/*.spec.js'],
   onPrepare: () => {
     browser.ignoreSynchronization = true;
+    browser.manage().timeouts().implicitlyWait(3000);
     reporter();
   }
 }

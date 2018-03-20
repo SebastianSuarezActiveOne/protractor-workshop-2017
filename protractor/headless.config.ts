@@ -6,7 +6,7 @@ export const config: Config = {
   framework: 'jasmine',
   SELENIUM_PROMISE_MANAGER: false,
   noGlobals: true,
-  getPageTimeout: 1000,
+  getPageTimeout: 30000,
   capabilities: {
     browserName: 'chrome',
     chromeOptions: {

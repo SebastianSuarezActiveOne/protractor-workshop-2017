@@ -16,36 +16,32 @@ describe('Buy a t-shirt', () => {
   const paymentPage: PaymentPage = new PaymentPage();
   const orderResumePage: OrderResumePage = new OrderResumePage();
 
-  beforeEach(() => {
-    jasmine.DEFAULT_TIMEOUT_INTERVAL = 120000;
-  });
   it('then should be bought a t-shirt', async () => {
     await browser.get('http://automationpractice.com/');
-    await (browser.sleep(10000));
     await menuContentPage.goToTShirtMenu();
-    await (browser.sleep(3000));
+    await (browser.sleep(5000));
     await productDetailPage.goToProductDetail();
-    await (browser.sleep(3000));
+    await (browser.sleep(5000));
     await productAddedPage.addProduct();
-    await (browser.sleep(3000));
+    await (browser.sleep(5000));
     await productAddedPage.goToCheckout();
-    await (browser.sleep(3000));
+    await (browser.sleep(5000));
     await summaryPage.goToCheckout();
-    await (browser.sleep(3000));
+    await (browser.sleep(5000));
     await signInStep.fillEmail();
     await signInStep.fillPassword();
     await signInStep.signIn();
-    await (browser.sleep(3000));
+    await (browser.sleep(5000));
     await addressPage.goToCheckout();
-    await (browser.sleep(3000));
+    await (browser.sleep(5000));
     await shippingPage.checkToS();
-    await (browser.sleep(3000));
+    await (browser.sleep(5000));
     await shippingPage.goToCheckout();
-    await (browser.sleep(3000));
+    await (browser.sleep(5000));
     await paymentPage.goToPayment();
-    await (browser.sleep(3000));
+    await (browser.sleep(5000));
     await orderResumePage.goToConfirmOrder();
-    await (browser.sleep(3000));
+    await (browser.sleep(5000));
     await expect($('#center_column > div > p > strong').getText())
       .toBe('Your order on My Store is complete.');
   });

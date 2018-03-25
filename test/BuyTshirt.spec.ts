@@ -22,7 +22,7 @@ describe('Buy a t-shirt', () => {
 
   it('then should be bought a t-shirt', async () => {
     await menuContentPage.goToTShirtMenu();
-    await productDetailPage.goToProductDetail();
+    await productDetailPage.goToProductDetail('Faded Short Sleeve T-shirts');
     await browser.wait(EC.elementToBeClickable($('#add_to_cart > button > span')));
     await productAddedPage.addProduct();
     await browser.wait(EC.elementToBeClickable($('[style*="display: block;"] .button-container > a')));
